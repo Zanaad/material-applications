@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Libraria Living</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+      :root {
+        --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --dark-bg: #1a1a2e;
+        --card-bg: rgba(30, 30, 50, 0.8);
+        --text-light: #e0e0ff;
+        --text-gray: #b0b0cc;
+        --accent-purple: #6c5ce7;
+        --backdrop-blur: blur(10px);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: var(--dark-bg);
+        font-family: "Montserrat", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      .signup-container {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .logo-section {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .logo-section h1 {
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+      }
+
+      .logo-section p {
+        color: var(--text-gray);
+        font-size: 1rem;
+      }
+
+      .form-box {
+        background: var(--card-bg);
+        backdrop-filter: var(--backdrop-blur);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 2.5rem;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      }
+
+      .form-box h2 {
+        color: var(--text-light);
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+
+      .form-box .subtitle {
+        color: var(--text-gray);
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 0.95rem;
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        color: var(--text-light);
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .form-row .form-group {
+        margin-bottom: 0;
+      }
+
+      .form-group input,
+      .form-group select {
+        width: 100%;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(102, 126, 234, 0.3);
+        border-radius: 10px;
+        color: var(--text-light);
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .form-group input::placeholder {
+        color: var(--text-gray);
+      }
+
+      .form-group input:focus,
+      .form-group select:focus {
+        outline: none;
+        border-color: var(--accent-purple);
+        box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+        background: rgba(102, 126, 234, 0.1);
+      }
+
+      .gender-container {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .gender-option {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .gender-option input[type="radio"] {
+        width: 18px;
+        height: 18px;
+        accent-color: var(--accent-purple);
+        cursor: pointer;
+      }
+
+      .gender-option label {
+        margin: 0;
+        cursor: pointer;
+        color: var(--text-gray);
+      }
+
+      .password-requirements {
+        background: rgba(102, 126, 234, 0.1);
+        border: 1px solid rgba(102, 126, 234, 0.2);
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.85rem;
+        color: var(--text-gray);
+      }
+
+      .password-requirements li {
+        margin-bottom: 0.3rem;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 1rem;
+        background: var(--primary-gradient);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .submit-btn:hover {
+        box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+        transform: translateY(-2px);
+      }
+
+      .submit-btn:active {
+        transform: translateY(0);
+      }
+
+      .divider {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+      }
+
+      .divider::before,
+      .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .divider span {
+        padding: 0 1rem;
+        color: var(--text-gray);
+        font-size: 0.9rem;
+      }
+
+      .login-link {
+        text-align: center;
+        color: var(--text-gray);
+        font-size: 0.95rem;
+      }
+
+      .login-link a {
+        color: var(--accent-purple);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .login-link a:hover {
+        color: var(--text-light);
+      }
+
+      .guest-link {
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .guest-link a {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        color: var(--text-light);
+        border: 1px solid rgba(102, 126, 234, 0.3);
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+      }
+
+      .guest-link a:hover {
+        background: rgba(102, 126, 234, 0.1);
+        border-color: var(--accent-purple);
+        color: var(--accent-purple);
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 1rem;
+        }
+
+        .logo-section {
+          margin-bottom: 2rem;
+        }
+
+        .logo-section h1 {
+          font-size: 2rem;
+        }
+
+        .form-box {
+          padding: 1.5rem;
+        }
+
+        .form-box h2 {
+          font-size: 1.5rem;
+        }
+
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+
+        .gender-container {
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="logo-section">
+        <h1>LIBRARIA LIVING</h1>
+        <p>Përshëndetje! Filloni udhëtimin tuaj.</p>
+      </div>
+
+      <div class="form-box">
+        <h2>Regjistrohu</h2>
+        <p class="subtitle">Krijo një llogari të re</p>
+
+        <form id="signupForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Emri</label>
+              <input type="text" id="firstName" placeholder="Emri" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Mbiemri</label>
+              <input type="text" id="lastName" placeholder="Mbiemri" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Fjalëkalimi</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Fjalëkalimi"
+              required
+            />
+          </div>
+
+          <div class="password-requirements">
+            <strong>Kërkesat për fjalëkalimin:</strong>
+            <ul>
+              <li>Të paktën 8 karaktere</li>
+              <li>Kombinim i shkronjave të mëdha dhe të vogla</li>
+              <li>Të paktën një numër</li>
+            </ul>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Konfirmo fjalëkalimin</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Konfirmo fjalëkalimin"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Zgjidh gjininë</label>
+            <div class="gender-container">
+              <div class="gender-option">
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Femer</label>
+              </div>
+              <div class="gender-option">
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Mashkull</label>
+              </div>
+              <div class="gender-option">
+                <input type="radio" id="other" name="gender" value="other" />
+                <label for="other">Të tjera</label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">Regjistrohu</button>
+        </form>
+
+        <div class="divider">
+          <span>ose</span>
+        </div>
+
+        <div class="login-link">
+          Tashmë keni llogari? <a href="login.html">Kyçu këtu</a>
+        </div>
+
+        <div class="guest-link">
+          <a href="index.html">Vazhdo si mysafir</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const firstName = document.getElementById("firstName").value.trim();
+          const lastName = document.getElementById("lastName").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const password = document.getElementById("password").value;
+          const confirmPassword =
+            document.getElementById("confirmPassword").value;
+          const gender = document.querySelector(
+            'input[name="gender"]:checked',
+          )?.value;
+
+          // Validation
+          if (
+            !firstName ||
+            !lastName ||
+            !email ||
+            !password ||
+            !confirmPassword
+          ) {
+            alert("Të gjitha fushat janë të detyrueshme.");
+            return;
+          }
+
+          if (password.length < 8) {
+            alert("Fjalëkalimi duhet të jetë të paktën 8 karaktere.");
+            return;
+          }
+
+          if (!/[A-Z]/.test(password) || !/[a-z]/.test(password)) {
+            alert(
+              "Fjalëkalimi duhet të përmbajë shkronja të mëdha dhe të vogla.",
+            );
+            return;
+          }
+
+          if (!/\d/.test(password)) {
+            alert("Fjalëkalimi duhet të përmbajë të paktën një numër.");
+            return;
+          }
+
+          if (password !== confirmPassword) {
+            alert("Fjalëkalimet nuk përputhen.");
+            return;
+          }
+
+          // Check if email already exists
+          const users = JSON.parse(localStorage.getItem("users") || "[]");
+          const userExists = users.some(
+            (user) => user.email.toLowerCase() === email.toLowerCase(),
+          );
+
+          if (userExists) {
+            alert(
+              "Ky email është tashmë i regjistruar. Ju lutem kyçuni ose përdorni një email tjetër.",
+            );
+            return;
+          }
+
+          // Create new user object
+          const newUser = {
+            id: Date.now(),
+            firstName: firstName,
+            lastName: lastName,
+            email: email.toLowerCase(),
+            password: password, // In production, this should be hashed
+            gender: gender || "not specified",
+            registeredAt: new Date().toISOString(),
+          };
+
+          // Save to localStorage
+          users.push(newUser);
+          localStorage.setItem("users", JSON.stringify(users));
+
+          // Save current user session
+          localStorage.setItem(
+            "currentUser",
+            JSON.stringify({
+              id: newUser.id,
+              firstName: newUser.firstName,
+              lastName: newUser.lastName,
+              email: newUser.email,
+            }),
+          );
+
+          alert("Regjistrimi u krye me sukses! Jeni kyçur automatikisht.");
+
+          // Redirect to home page
+          setTimeout(() => {
+            window.location.href = "index.html";
+          }, 1500);
+        });
+    </script>
+  </body>
+</html>

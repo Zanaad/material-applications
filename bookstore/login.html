@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Libraria Living</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+      :root {
+        --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --dark-bg: #1a1a2e;
+        --card-bg: rgba(30, 30, 50, 0.8);
+        --text-light: #e0e0ff;
+        --text-gray: #b0b0cc;
+        --accent-purple: #6c5ce7;
+        --backdrop-blur: blur(10px);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: var(--dark-bg);
+        font-family: "Montserrat", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      .login-container {
+        width: 100%;
+        max-width: 450px;
+      }
+
+      .logo-section {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .logo-section h1 {
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+      }
+
+      .logo-section p {
+        color: var(--text-gray);
+        font-size: 1rem;
+      }
+
+      .form-box {
+        background: var(--card-bg);
+        backdrop-filter: var(--backdrop-blur);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 2.5rem;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      }
+
+      .form-box h2 {
+        color: var(--text-light);
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+
+      .form-box .subtitle {
+        color: var(--text-gray);
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 0.95rem;
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        color: var(--text-light);
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(102, 126, 234, 0.3);
+        border-radius: 10px;
+        color: var(--text-light);
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .form-group input::placeholder {
+        color: var(--text-gray);
+      }
+
+      .form-group input:focus {
+        outline: none;
+        border-color: var(--accent-purple);
+        box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+        background: rgba(102, 126, 234, 0.1);
+      }
+
+      .forgot-password {
+        text-align: right;
+        margin-bottom: 2rem;
+      }
+
+      .forgot-password a {
+        color: var(--accent-purple);
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+      }
+
+      .forgot-password a:hover {
+        color: var(--text-light);
+        text-decoration: underline;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 1rem;
+        background: var(--primary-gradient);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .submit-btn:hover {
+        box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+        transform: translateY(-2px);
+      }
+
+      .submit-btn:active {
+        transform: translateY(0);
+      }
+
+      .divider {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+      }
+
+      .divider::before,
+      .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .divider span {
+        padding: 0 1rem;
+        color: var(--text-gray);
+        font-size: 0.9rem;
+      }
+
+      .signup-link {
+        text-align: center;
+        color: var(--text-gray);
+        font-size: 0.95rem;
+      }
+
+      .signup-link a {
+        color: var(--accent-purple);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .signup-link a:hover {
+        color: var(--text-light);
+      }
+
+      .guest-link {
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .guest-link a {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        color: var(--text-light);
+        border: 1px solid rgba(102, 126, 234, 0.3);
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+      }
+
+      .guest-link a:hover {
+        background: rgba(102, 126, 234, 0.1);
+        border-color: var(--accent-purple);
+        color: var(--accent-purple);
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 1rem;
+        }
+
+        .logo-section {
+          margin-bottom: 2rem;
+        }
+
+        .logo-section h1 {
+          font-size: 2rem;
+        }
+
+        .form-box {
+          padding: 1.5rem;
+        }
+
+        .form-box h2 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="logo-section">
+        <h1>LIBRARIA LIVING</h1>
+        <p>Mirësevini përsëri!</p>
+      </div>
+
+      <div class="form-box">
+        <h2>Kyqu</h2>
+        <p class="subtitle">Jepni kredencialet tuaja për të hyrë</p>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Fjalëkalimi</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Fjalëkalimi"
+              required
+            />
+          </div>
+
+          <div class="forgot-password">
+            <a href="#">Keni harruar fjalëkalimin?</a>
+          </div>
+
+          <button type="submit" class="submit-btn">Kyqu</button>
+        </form>
+
+        <div class="divider">
+          <span>ose</span>
+        </div>
+
+        <div class="signup-link">
+          Nuk keni llogari? <a href="signup.html">Regjistrohu tani</a>
+        </div>
+
+        <div class="guest-link">
+          <a href="index.html">Vazhdo si mysafir</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Check if user is already logged in
+      window.addEventListener("DOMContentLoaded", function () {
+        const currentUser = localStorage.getItem("currentUser");
+        if (currentUser) {
+          const user = JSON.parse(currentUser);
+          // Optional: Show a message and redirect if already logged in
+          console.log("User already logged in:", user.firstName, user.lastName);
+        }
+      });
+
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const email = document.getElementById("email").value.trim().toLowerCase();
+          const password = document.getElementById("password").value.trim();
+
+          if (!email || !password) {
+            alert("Email dhe fjalëkalimi nuk mund të jenë bosh.");
+            return;
+          }
+
+          if (password.length < 8) {
+            alert("Fjalëkalimi duhet të jetë të paktën 8 karaktere.");
+            return;
+          }
+
+          // Get users from localStorage
+          const users = JSON.parse(localStorage.getItem("users") || "[]");
+          
+          // Find user with matching email and password
+          const user = users.find(u => u.email === email && u.password === password);
+          
+          if (!user) {
+            alert("Email ose fjalëkalim i gabuar. Ju lutem provoni përsëri.");
+            return;
+          }
+
+          // Save current user session
+          localStorage.setItem("currentUser", JSON.stringify({
+            id: user.id,
+            firstName: user.firstName,
+            lastName: user.lastName,
+            email: user.email,
+            gender: user.gender
+          }));
+
+          alert(`Mirësevini, ${user.firstName}! Jeni kyçur me sukses.`);
+          
+          // Redirect to home page
+          setTimeout(() => {
+            window.location.href = "index.html";
+          }, 1500);
+        });
+    </script>
+  </body>
+</html>

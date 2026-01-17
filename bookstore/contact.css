@@ -1,105 +1,170 @@
 body {
-  margin: 0px;
-  padding: 0px;
-}
-.contact-container{
-    width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
-
-
-}
-h2{
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-kontakt-forma{
-    margin-top: 20px;
-}
-label { 
-    display:block;
-     margin-bottom: 8px; 
+  margin: 0;
+  padding: 0;
+  background: var(--dark-bg);
+  color: var(--text-light);
 }
 
-
-#name,#lastname,#email,#message{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-   
- border-radius: 3px;
-
-}
-textarea{
-    height: 150px;
-
-
+.contact-container {
+  width: 600px;
+  max-width: 90%;
+  margin: 120px auto;
+  padding: 3rem;
+  background: var(--card-bg);
+  backdrop-filter: var(--backdrop-blur);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
 }
 
-
-input[type="submit"]{
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+.contact-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 70px rgba(102, 126, 234, 0.3);
 }
 
-input[type="submit"]:hover{
-    background-color: #555;
-
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+kontakt-forma {
+  margin-top: 2rem;
 }
 
-.button{
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+label {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 1rem;
 }
 
-
-.button:hover{
-    background-color: #555;
+#name,
+#lastname,
+#email,
+#message {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: var(--backdrop-blur);
+  border-radius: 12px;
+  color: var(--text-light);
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
-.address-icon{
- height: 64px;
+#name:focus,
+#lastname:focus,
+#email:focus,
+#message:focus {
+  outline: none;
+  border-color: var(--accent-purple);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+}
+
+#name::placeholder,
+#lastname::placeholder,
+#email::placeholder,
+#message::placeholder {
+  color: var(--text-gray);
+}
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background: var(--primary-gradient);
+  color: white;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: var(--primary-gradient);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+}
+
+.address-icon {
+  height: 64px;
   width: 64px;
   line-height: 64px;
   font-size: 30px;
   text-align: center;
-  border-radius: 500px;
+  border-radius: 50%;
   position: relative;
   float: left;
   margin-right: 30px;
   margin-left: 2px;
   z-index: 5;
   color: #fff;
-  background-color: #ccc;
+  background: var(--primary-gradient);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
 }
 
-.contact-info{
+.address-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.6);
+}
+
+.contact-info {
   display: flex;
   align-items: center;
   margin-top: 60px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(10px);
 }
 
 #dergoEmail {
-  color: #000;
-  text-decoration:none;
+  color: var(--accent-pink);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
 
-
-
-
-
+#dergoEmail:hover {
+  color: var(--accent-purple);
+  text-decoration: underline;
+}
