@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <script src="path/to/jquery/jquery.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- Bootstrap JavaScript -->
+<script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ 
+</head>
+<body>
+  <header class="container-fluid header-container">
+
+    <div class="logo">
+     <img src="./images/StoryShop.png" alt="Logo">
+     <a href="index.html">LIBRARIA LIVING</a>
+    </div>
+  
+    <div class="search-container">
+      <form action="" class="search">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <button class="search-button"> <i class="fas fa-search search-icon"></i></button>
+      </form>
+    </div>
+  
+    <nav class="menu-container">
+     <ul>
+      <li><a href="#">Libra shqip</a>
+       <ul>
+        <li><a href="./fantazi.html">Fantazi</a></li>
+        <li><a href="./novela.html">Novela</a></li>
+        <li><a href="./romance.html">Romancë</a></li>
+       </ul>
+      </li>
+      <li><a href="#">Libra të huaj</a>
+       <ul>
+        <li><a href="./english.html">Libra anglisht</a></li>
+        <li><a href="./frengjisht.html">Libra frengjisht</a></li>
+        <li><a href="./turqisht.html">Libra turqisht</a></li>
+       </ul>
+      </li>
+      <li><a href="events_Managemenet.html">Evente</a></li>
+      <li><a href="./about.html">Rreth nesh</a></li>
+      <li><a href="./account.html"><span class="fas fa-user" style="font-size: 20px;"></span></a></li>
+     
+     <div class="dropdown-cart">
+            <button class="cart-toggle-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </button>
+          <div class="cart-window">
+              <div class="cart-items">
+                <div class="book-card"></div>
+              </div>
+              <div class="cart-total">
+                <p>Total: <span id="cart-total-price">0€</span></p>
+              </div>
+              <button class="btn btn-success">Checkout</button>
+            </div>
+          </div>
+          <div class="dropdown-cart-1">
+    <button class="cart-toggle-btn-1">
+      <i class="fas fa-heart"></i>
+      <span class="cart-count-1">0</span>
+    </button>
+  <div class="cart-window-1">
+      <div class="cart-items-1">
+        <div class="card-1"></div>
+      </div>
+      </div>
+    </div>
+    </ul>
+    </nav>
+   </header>
+
+  <div class="search-bar">
+<form action="" class="search">
+    <input type="text" placeholder="search..." name="q">
+    <button class="search-button"> <i class="fas fa-search search-icon"></i></button>
+</form>
+  </div>
+
+  <div class="container">
+    <img  class="img-container" src="img/libraria living (4) (1).png" alt="">
+  </div>
+
+  <div class="container-I">
+   <a href="#" ><img style="height: 200px;width: 250px; margin-right: 30px;float: left;" src="img/Black and Beige Simple Book Mockup Instagram Post (1).png" alt="img"></a>
+   <a href="#" ><img class="img-1" src="img/oncert.png" alt="img"></a>
+   <a href="#" ><img style="height: 200px;width: 300px;margin-left: 40px;float: right;" src="img/Black and Beige Simple Book Mockup Instagram Post.png" alt="img"></a>
+    </div>
+   
+
+
+
+
+    <nav class="navbar-2">
+     
+      <ul>
+        <li style="font-weight: bold;font-size: 20px; padding-right: 50px;text-shadow: 1px 1px 2px #000000;">Titujt e rinj</li>
+        <li style="color: red; font-weight: bold;">Shqip</li>
+        <li>Te huaj</li>
+        <li style="padding-left: 700px;"><button type="button" class="btn btn-outline-danger">More</button></li>
+      </ul>
+</nav>
+
+<div id="carouselExample1" class="carousel slide" data-bs-theme="dark">
+  <div style="margin-bottom: 50px;" class="carousel-inner">
+    <div class="carousel-item active">
+<div class="wrapper">
+      <ul class="carousel">
+        <li class="card">
+     
+          <div class="img"><img src="img/hajdefolimmeveten.10.png" alt="img"></div>
+          <div class="stars" id="Hajde Folim Me Veten">
+            <i class="far fa-star" data-value="1"></i>
+            <i class="far fa-star" data-value="2"></i>
+            <i class="far fa-star" data-value="3"></i>
+            <i class="far fa-star" data-value="4"></i>
+            <i class="far fa-star" data-value="5"></i>
+            </div>
+            <button     class="btn btn-outline-danger">
+             
+              <i class="fas fa-heart"></i>
+          </button>
+       
+        </p>
+          
+        <h5  style="color: black;margin-right: 30px;font-family: cursive;font-size: 18px;">Hajde folim me veten</h6>
+          <div style="display: flex;">
+            <h6 style="color: rgb(220, 20, 20);margin-right: 70px;font-family: cursive;font-size: 13px;">Autori perbashket</h6>
+          <h6 style="color: red;font-weight: bold;">-10%</h6>
+        </div>
+          <div style="display:flex;">
+          <h7 style="color: black;margin-right: 130px;font-weight: bold;margin-top: 9.1px;">10€  </h7 >
+          <h6 style="margin:9.2px;font-weight: bold;color: black; text-decoration: line-through;">12€ </h6>
+          </div>
+        <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+        
+</li>
+       
+        <li class="card">
+          <div class="img"><img src="img/klubi5.9.png" alt="img" ></div>
+           <div class="stars" id="Klubi 5">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+           <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+        </p>
+      
+        <h5 style="color: black;margin-right: 125px;font-family: cursive;font-size: 18px;">Klubi 5</h6>
+          <div style="display: flex;">
+            <h6 style="color: rgb(220, 20, 20);margin-right: 80px;font-family: cursive;">Robin Sharma</h6>
+         
+        </div>
+          <div style="display:flex;">
+          <h7  style="color: black;margin-right: 170px;font-weight: bold;margin-top: 9.1px;">9€  </h7 >
+
+          </div>
+        <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+        </li>
+        <li class="card">
+          <div class="img"><img src="img/murguqeshitiferrarin.7.png" alt="img" ></div>
+           <div class="stars" id="Murgu qe shiti ferrarin">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+           <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+        </p>
+          
+        <h5 style="color: black;margin-right: 20px;font-family: cursive;font-size: 18px;">Murgu qe shiti ferrarin</h6>
+          <div style="display: flex;">
+            <h6 style="color: rgb(220, 20, 20);margin-right: 120px;font-family: cursive;">Robin Sharma</h6>
+
+        </div>
+          <div style="display:flex;">
+          <h7  style="color: black;margin-right: 190px;font-weight: bold;margin-top: 9.1px;">7€  </h7 >
+         
+          </div>
+        <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+        </li>
+       
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="wrapper">
+        <ul class="carousel">
+          <li class="card">
+            <div class="img"><img src="img/psefleme.15.png" alt="img" ></div>
+               <div class="stars" id="Pse Fleme?">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+             <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+          </p>
+            
+          <h5 style="color: black;margin-right: 120px;font-family: cursive;font-size: 18px;">Pse fleme?</h6>
+            <div style="display: flex;">
+              <h6 style="color: rgb(220, 20, 20);margin-right: 90px;font-family: cursive;">Matthew Walker</h6>
+
+          </div>
+            <div style="display:flex;">
+            <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 9.1px;">15€  </h7 >
+            
+            </div>
+          <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+        
+          </li>
+          <li class="card">
+            <div class="img"><img src="img/ruajmprehtesine.15.png" alt="img" ></div>
+               <div class="stars" id="Ruaj Mprehtesine">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+             <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+          </p>
+            
+          <h5 style="color: black;margin-right: 90px;font-family: cursive;font-size: 18px;">Ruaj mprehtesine</h6>
+            <div style="display: flex;">
+              <h6 style="color: rgb(220, 20, 20);margin-right: 120px;font-family: cursive;">Dr.Sanjay Gupta</h6>
+
+          </div>
+            <div style="display:flex;">
+            <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 9.1px;">15€  </h7 >
+            
+            </div>
+          <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+        
+          </li>
+          <li class="card">
+            <div class="img"><img src="img/shitesiikepuceve15.png" alt="img" ></div>
+               <div class="stars" id="Shitesi Kepuceve">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+             <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+          </p>
+            
+           <h5 style="color: black;margin-right: 70px;font-family: cursive;">Shitesi Kepuceve</h6>
+          <h6 style="color: rgb(220, 20, 20);margin-right: 150px;font-family: cursive;">Phil Knight</h6>
+          <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 9.1px;">15€  </h7 >
+        <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+        
+          </li>
+        
+        </div>
+    </div>
+    <div class="carousel-item">
+      <div class="wrapper">
+        <ul class="carousel">
+          <li class="card">
+            <div class="img"><img src="img/stevejobs.12.png" alt="img" ></div>
+               <div class="stars" id="Steve Jobs">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+             <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+          </p>
+            
+          <h5 style="color: black;margin-right: 110px;font-family: cursive;">Steve Jobs</h6>
+            <h6 style="color: rgb(220, 20, 20);margin-right: 100px;font-family: cursive;">Walter Isaacson</h6>
+            <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 9.1px;">12€  </h7 >
+          <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+        
+          </li>
+          <li class="card">
+            <div class="img"><img src="img/frida.8.4.png" alt="img" ></div>
+               <div class="stars" id="Frida">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+             <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+          </p>
+            
+          <h5 style="color: black;margin-right: 170px;font-family: cursive;">Frida</h6>
+            <h6 style="color: rgb(220, 20, 20);margin-right: 100px;font-family: cursive;">Hayden Herrera</h6>
+            <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 9.1px;">8.40€  </h7 >
+          <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+          </li>
+          <li class="card">
+            <div class="img"><img src="img/becoming.18.png" alt="img" ></div>
+               <div class="stars" id="Becoming">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+             <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+          </p>
+            
+          <h5 style="color: black;margin-right: 120px;font-family: cursive;">Becoming</h6>
+            <h6 style="color: rgb(220, 20, 20);margin-right: 90px;font-family: cursive;">Michelle Obama</h6>
+            <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 9.1px;">18€  </h7 >
+          <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+          </li>
+       
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
+<hr></hr>
+<!--carousel 2-->
+
+<nav class="navbar-2">
+     
+  <ul>
+    <li style="font-weight: bold;font-size: 20px; padding-right: 50px;text-shadow: 1px 1px 2px #000000;">Best Sellers</li>
+    <li style="color: red; font-weight: bold;">Shqip</li>
+    <li>Te huaj</li>
+    <li style="padding-left: 700px;"><button type="button" class="btn btn-outline-danger">More</button></li>
+  </ul>
+</nav>
+
+<div id="carouselExample2" class="carousel slide" data-bs-theme="dark">
+<div style="margin-bottom: 50px;" class="carousel-inner">
+<div class="carousel-item active">
+<div class="wrapper">
+  <ul class="carousel">
+    <li class="card">
+ 
+      <div class="img"><img src="img/1984.9.png" alt="img"></div>
+         <div class="stars" id="1984">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+       <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+    </p>
+      
+    <h5 style="color: black;margin-right: 150px;font-family: cursive;font-size: 18px;">1984</h6>
+  <h6 style="color: rgb(220, 20, 20);margin-right: 90px;font-family: cursive;">George Orwell</h6>
+     <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 9.1px;">9€  </h7 >
+<button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    
+</li>
+   
+    <li class="card">
+      <div class="img"><img src="img/bibliotekaemesnates.10.png" alt="img" ></div>
+      <div class="stars" id="Bibloteka e Mesnates">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+       <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+    </p>
+  
+    <h5 style="color: black;margin-right: 20px;font-family: cursive;font-size: 18px;">Bibloteka e Mesnates</h6>
+      <div style="display: flex;">
+        <h6 style="color: rgb(220, 20, 20);margin-right: 90px;font-family: cursive;">Matt Haig</h6>
+      <h6 style="color: red;font-weight: bold;">-10%</h6>
+    </div>
+      <div style="display:flex;">
+      <h7  style="color: black;margin-right: 130px;font-weight: bold;margin-top: 9.1px;">10€  </h7 >
+      <h6 style="margin:9.2px;font-weight: bold;color: black; text-decoration: line-through;">12€ </h6>
+      </div>
+    <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    </li>
+    <li class="card">
+      <div class="img"><img src="img/malijeti.10.png" alt="img" ></div>
+         <div class="stars" id="Mali Je Ti">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+       <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+    </p>
+      
+    <h5 style="color: black;margin-right: 120px;font-family: cursive;font-size: 18px;">Mali je ti</h6>
+      <div style="display: flex;">
+        <h6 style="color: rgb(220, 20, 20);margin-right: 60px;font-family: cursive;">Brianna Wiest</h6>
+      <h6 style="color: red;font-weight: bold;">-10%</h6>
+    </div>
+      <div style="display:flex;">
+      <h7  style="color: black;margin-right: 130px;font-weight: bold;margin-top: 9.1px;">10€  </h7 >
+      <h6 style="margin:9.2px;font-weight: bold;color: black; text-decoration: line-through;">12€ </h6>
+      </div>
+    <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    </li>
+   
+  </div>
+</div>
+<div class="carousel-item">
+  <div class="wrapper">
+    <ul class="carousel">
+      <li class="card">
+        <div class="img"><img src="img/intelegjencaartificiale.5.png" alt="img" ></div>
+        <div class="stars" id="intelegjenca Artificiale">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+          </div>
+         <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+        
+      <h5 style="color: black;margin-right: 20px;font-family: cursive;font-size: 18px;">Intelegjenca artificiale</h6>
+        <div style="display: flex;">
+          <h6 style="color: rgb(220, 20, 20);margin-right: 130px;font-family: cursive;">Matt Burges</h6>
+
+      </div>
+        <div style="display:flex;">
+        <h7  style="color: black;margin-right: 200px;font-weight: bold;margin-top: 9.1px;">5€  </h7 >
+
+        </div>
+      <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    
+      </li>
+      <li class="card">
+        <div class="img"><img src="img/mendodhepasurohu.7.png" alt="img" ></div>
+           <div class="stars" id="Mendo dhe Pasurohu">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+         <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+        
+      <h5 style="color: black;margin-right: 20px;font-family: cursive;font-size: 18px;">Mendo dhe Pasurohu</h6>
+        <div style="display: flex;">
+          <h6 style="color: rgb(220, 20, 20);margin-right: 100px;font-family: cursive;">Napoleon Hill</h6>
+
+      </div>
+        <div style="display:flex;">
+        <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 9.1px;">5€  </h7 >
+
+        </div>
+      <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    
+      </li>
+      <li class="card">
+        <div class="img"><img src="img/prgjteshkurtaperpytje.8.png" alt="img" ></div>
+           <div class="stars" id="Pergjigje te shkurta per pyetje madhore">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+         <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+        
+       <h5 style="color: black;margin-right: 60px;font-family: cursive;font-size: 14px;">Pergjigje te shkurta per pyetje madhore </h6>
+      <h6 style="color: rgb(220, 20, 20);margin-right: 100px;font-weight: cursive;">Stephen Hawking</h6>
+      <h7  style="color: black;margin-right: 170px;font-weight: bold;font-size: 20px;margin-top: 20px;">8€  </h7 >
+    <button style=" width: 200px; padding-top: 10px; margin-bottom: 20px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    
+      </li>
+    
+    </div>
+</div>
+<div class="carousel-item">
+  <div class="wrapper">
+    <ul class="carousel">
+      <li class="card">
+        <div class="img"><img src="img/mindset.16.80.png" alt="img" ></div>
+           <div class="stars" id="Mindset">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+         <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+      <h5 style="color: black;margin-right: 140px;font-family: cursive;font-size: 18px;">Mindset</h6>
+        <div style="display: flex;">
+          <h6 style="color: rgb(220, 20, 20);margin-right: 90px;font-family: cursive;">Dr.Carol S Dweck</h6>
+
+      </div>
+        <div style="display:flex;">
+        <h7  style="color: black;margin-right: 160px;font-weight: bold;margin-top: 9.1px;">16.80€  </h7 >
+
+        </div>
+      <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+      
+    
+      </li>
+      <li class="card">
+        <div class="img"><img src="img/fermakafsheve.5.png" alt="img" ></div>
+           <div class="stars" id="Ferma e Kafsheve">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+         <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+        
+      <h5 style="color: black;margin-right: 60px;font-family: cursive;font-size: 18px;">Ferma e Kafsheve</h6>
+        <div style="display: flex;">
+          <h6 style="color: rgb(220, 20, 20);margin-right: 100px;font-family: cursive;">George Orwell</h6>
+
+      </div>
+        <div style="display:flex;">
+        <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 9.1px;">5€  </h7 >
+
+        </div>
+      <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+      </li>
+      <li class="card">
+        <div class="img"><img src="img/mindreader.7.png" alt="img" ></div>
+           <div class="stars" id="Mind Reader">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+         <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+        
+      <h5 style="color: black;margin-right: 120px;font-family: cursive;font-size: 18px;">Mind Reader</h6>
+        <div style="display: flex;">
+          <h6 style="color: rgb(220, 20, 20);margin-right: 100px;font-family: cursive;">David I.Liebeman</h6>
+
+      </div>
+        <div style="display:flex;">
+        <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 9.1px;">5€  </h7 >
+
+        </div>
+      <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+      </li>
+   
+    </div>
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</div>
+
+<!--carouseli 3-->
+<hr></hr>
+<nav class="navbar-2">
+     
+  <ul>
+    <li style="font-weight: bold;font-size: 20px; padding-right: 50px;text-shadow: 1px 1px 2px #000000;">Librat e Muajit</li>
+    <li style="color: red; font-weight: bold;">Shqip</li>
+    <li>Te huaj</li>
+    <li style="padding-left: 700px;"><button type="button" class="btn btn-outline-danger">More</button></li>
+  </ul>
+</nav>
+
+<div id="carouselExample3" class="carousel slide" data-bs-theme="dark">
+<div style="margin-bottom: 50px;" class="carousel-inner">
+<div class="carousel-item active">
+<div class="wrapper">
+  <ul class="carousel">
+    <li class="card">
+ 
+      <div class="img"><img src="img/thesecret.8.png" alt="img"></div>
+         <div class="stars" id="The Secret">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+       <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+    </p>
+      
+    <h5 style="color: black;margin-right: 100px;font-family: cursive;font-size: 18px;">The secret </h6>
+      <div style="display: flex;">
+        <h6 style="color: rgb(220, 20, 20);margin-right: 80px;font-family: cursive;">Rhonda Burnes</h6>
+  
+    </div>
+      <div style="display:flex;">
+      <h7  style="color: black;margin-right: 170px;font-weight: bold;margin-top: 9.1px;">8€  </h7 >
+   
+      </div>
+    <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    
+</li>
+   
+    <li class="card">
+      <div class="img"><img src="img/tijeplacebo.7.4.png" alt="img" ></div>
+         <div class="stars" id="Ti je Placebo">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+       <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+    </p>
+    <h5 style="color: black;margin-right: 80px;font-family: cursive;font-size: 18px;">Ti je placebo </h6>
+      <div style="display: flex;">
+        <h6 style="color: rgb(220, 20, 20);margin-right: 90px;font-family: cursive;">Joe Dispenza</h6>
+  
+    </div>
+      <div style="display:flex;">
+      <h7  style="color: black;margin-right: 140px;font-weight: bold;margin-top: 9.1px;">7.40€  </h7 >
+   
+      </div>
+    <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+
+    </li>
+    <li class="card">
+      <div class="img"><img src="img/trurifamijes.8.4.png" alt="img" ></div>
+         <div class="stars" id="Truri i Femijes">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+       <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+    </p>
+      
+    <h5 style="color: black;margin-right: 100px;font-family: cursive;font-size: 18px;">Truri i femijes</h6>
+      <div style="display: flex;">
+        <h6 style="color: rgb(220, 20, 20);margin-right: 120px;font-family: cursive;">Daniel J.Siegel</h6>
+      
+    </div>
+      <div style="display:flex;">
+      <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 9.1px;">8.40€  </h7 >
+   
+      </div>
+    <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    </li>
+   
+  </div>
+</div>
+<div class="carousel-item">
+  <div class="wrapper">
+    <ul class="carousel">
+      <li class="card">
+        <div class="img"><img src="img/teoriaegjithqkaje.8.png" alt="img" ></div>
+           <div class="stars" id="Teoria e gjithqkaje">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+         <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+        
+      <h5 style="color: black;margin-right: 20px;font-family: cursive;font-size: 18px;">Teoria e gjithqkaje</h6>
+        <div style="display: flex;">
+          <h6 style="color: rgb(220, 20, 20);margin-right: 50px;font-family: cursive;">Stephen Hawking</h6>
+       
+      </div>
+        <div style="display:flex;">
+        <h7  style="color: black;margin-right: 160px;font-weight: bold;margin-top: 9.1px;">8€  </h7 >
+      
+        </div>
+      <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    
+      </li>
+      <li class="card">
+        <div class="img"><img src="img/everythingis..10.png" alt="img" ></div>
+           <div class="stars" id="Everything is f*cked">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+         <button     class="btn btn-outline-danger" id="heart-button">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+        
+      <h5 style="color: black;margin-right: 20px;font-family: cursive;font-size: 18px;">Everything is f*cked</h6>
+        <div style="display: flex;">
+          <h6 style="color: rgb(220, 20, 20);margin-right: 100px;font-family: cursive;">Mark Manson</h6>
+        
+      </div>
+        <div style="display:flex;">
+        <h7  style="color: black;margin-right: 170px;font-weight: bold;margin-top: 9.1px;"> 10€  </h7 >
+       
+        </div>
+      <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    
+      </li>
+      <li class="card">
+        <div class="img"><img src="img/beforewesaygoodbye.1430.png" alt="img" ></div>
+           <div class="stars" id="Before we say goodbye">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+         <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+        
+       <h5 style="color: black;font-size:17px;font-family: cursive;">Before we say goodbye</h6>
+      <h6 style="color: rgb(220, 20, 20);margin-right: 40px;font-family: cursive;">Toshikazu Rawaguchi</h6>
+      <h7  style="color: black;margin-right: 140px;font-weight: bold;margin-top: 20px;">14.30€  </h7 >
+    <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    
+      </li>
+    
+    </div>
+</div>
+<div class="carousel-item">
+  <div class="wrapper">
+    <ul class="carousel">
+      <li class="card">
+        <div class="img"><img src="img/artiibrishte.10.png" alt="img" ></div>
+           <div class="stars" id="Arti i brishte i not giving a f*ck">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+         <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+        
+      <h5 style="color: black;margin-right: 50px;font-family: cursive;font-size: 15px;">Arti i brishte i not giving a f*ck</h6>
+        <h6 style="color: rgb(220, 20, 20);margin-right: 130px;font-family: cursive;">Mark Manson</h6>
+        <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 20px;">14.30€  </h7 >
+      <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+    
+      </li>
+      <li class="card">
+        <div class="img"><img src="img/mbaronmene.9.png" alt="img" ></div>
+           <div class="stars" id="Mbaron me ne">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+         <button     class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+        
+      <h5 style="color: black;margin-right: 50px;font-family: cursive;">Mbaron me ne</h6>
+        <h6 style="color: rgb(220, 20, 20);margin-right: 90px;font-family: cursive;">Colleen Hoover</h6>
+        <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 20px;">9€  </h7 >
+      <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+      </li>
+      <li class="card">
+        <div class="img"><img src="img/ishulliipemevetezhdukura.12.png" alt="img" ></div>
+           <div class="stars" id="Ishulli i pemeve te zhdukura">
+        <i class="far fa-star" data-value="1"></i>
+        <i class="far fa-star" data-value="2"></i>
+        <i class="far fa-star" data-value="3"></i>
+        <i class="far fa-star" data-value="4"></i>
+        <i class="far fa-star" data-value="5"></i>
+        </div>
+         <button  class="btn btn-outline-danger">
+              <i class="fas fa-heart"></i>
+          </button>
+      </p>
+        
+      <h5 style="color: black;margin-right: 50px;font-family: cursive;font-size: 15px;">Ishulli i pemeve te zhdukura</h6>
+        <h6 style="color: rgb(220, 20, 20);margin-right: 130px;font-family: cursive;">Elif Shafak</h6>
+        <h7  style="color: black;margin-right: 180px;font-weight: bold;margin-top: 20px;">12€  </h7>
+      <button style=" width: 200px; padding-top: 10px; margin-top: 5px;"type="button" class="btn btn-danger">Shto ne shporte</button>
+      </li>
+   
+    </div>
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</div>
+
+<!--footeri-->
+<footer>
+  <div class="content">
+    <div class="top">
+      <div class="logo-details">
+        <i class="fab fa-slack"></i>
+        <span class="logo_name">Libraria Dukagjini</span>
+      </div>
+      <div class="media-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        
+      </div>
+    </div>
+    <div class="link-boxes">
+      <ul class="box">
+        <li class="link_name">LIBRARIA LIVING</li>
+        <li><a href="#">Bulevardi Nene Tereza</a></li>
+        <li><a href="mailto:bookstore@gmail.com">bookstore@gmail.com</a></li>
+        <li><a href="callto:+383 45 647 763">+383 45 647 763</a></li>
+     
+      </ul>
+      <ul class="box">
+        <li class="link_name">Te duhet ndihme</li>
+        <li><a href="about.html">Rreth nesh</a></li>
+        <li><a href="contact.html">Na kontakto</a></li>
+        <li class="link_name">Kontakto <abbr title="Kontakto sherbimin e konsumatorit">SHEK</abbr></li>
+      </ul>
+    
+      <ul class="box input-box">
+        <li class="link_name">Subscribe</li>
+        <li><input type="text" placeholder="Enter your email"></li>
+      </ul>
+    </div>
+  </div>
+  </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+   
+    $(".search").on("submit", function (e) {
+      e.preventDefault(); 
+
+      var searchTerm = $(this).find("input[name='q']").val().toLowerCase();
+
+      $(".carousel-item .card").each(function () {
+        var cardTitle = $(this).find("h5").text().toLowerCase();
+
+        if (cardTitle.includes(searchTerm)) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
+    });
+  });
+
+
+
+$(document).ready(function () {
+  var cart = [];
+
+  $(".cart-toggle-btn").on("click", function () {
+    $(".cart-window").toggle();
+    updateCartDisplay();
+  });
+
+  $(".btn-danger").on("click", function () {
+    var cardContent = $(this).closest(".card").clone(); 
+    cardContent.find(".btn-danger").remove(); 
+    cart.push(cardContent.html());
+    updateCartDisplay();
+    alert("Produkti u shtua ne shporte!");
+  });
+
+  function updateCartDisplay() {
+  var cartItems = $(".cart-items");
+  var totalPrice = 0;
+
+  cartItems.empty();
+
+  $.each(cart, function (index, cardHtml) {
+    cartItems.append("" + cardHtml + "");
+
+    
+    var priceElement = $(cardHtml).find("h7");
+    var priceText = priceElement.text().trim();
+
+    
+    priceText = priceText.replace("€", "");
+
+   
+    if (!isNaN(parseFloat(priceText))) {
+      totalPrice += parseFloat(priceText);
+    } else {
+      console.error("Invalid Price:", priceText);
+    }
+  });
+
+  console.log("Total Price:", totalPrice);
+
+  $("#cart-total-price").text(totalPrice.toFixed(2) + "€");
+  $(".cart-count").text(cart.length);
+}
+
+});
+
+//per favorites
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const addToFavoritesButtons = document.querySelectorAll('.btn.btn-outline-danger');
+    const cartItems = document.querySelector(".cart-items-1");
+
+    let favoritesCount = 0; 
+
+    
+    function addToFavorites(event) {
+        const button = event.currentTarget;
+        const card = button.closest(".card");
+        const cardContent = card.cloneNode(true); 
+
+        favoritesCount++;
+        const newItem = document.createElement("li");
+        newItem.classList.add("card-1");
+        newItem.appendChild(cardContent);
+
+        cartItems.appendChild(newItem);
+        updateFavoritesCount();
+    }
+
+    
+    function updateFavoritesCount() {
+        const cartCount = document.querySelector(".cart-count-1");
+        cartCount.textContent = favoritesCount;
+    }
+
+   
+    addToFavoritesButtons.forEach(button => {
+        button.addEventListener('click', addToFavorites);
+    });
+});
+
+//per rating
+document.addEventListener("DOMContentLoaded", function() {
+  const starsContainers = document.querySelectorAll(".stars");
+
+  starsContainers.forEach((starsContainer) => {
+    const stars = starsContainer.querySelectorAll("i");
+
+    stars.forEach((star) => {
+      star.addEventListener("click", function() {
+        rateStar(this, starsContainer);
+      });
+
+      star.addEventListener("mouseover", function() {
+        hoverStar(this, stars);
+      });
+
+      star.addEventListener("mouseout", function() {
+        resetStars(stars);
+      });
+    });
+  });
+
+  function rateStar(clickedStar, starsContainer) {
+    const value = clickedStar.getAttribute("data-value");
+    alert(`You rated ${starsContainer.id} ${value} stars`);
+  }
+
+  function hoverStar(hoveredStar, stars) {
+    const value = hoveredStar.getAttribute("data-value");
+    resetStars(stars);
+
+    for (let i = 0; i < value; i++) {
+      stars[i].classList.add("fas");
+      stars[i].classList.remove("far");
+    }
+  }
+
+  function resetStars(stars) {
+    stars.forEach((star) => {
+      star.classList.remove("fas");
+      star.classList.add("far");
+    });
+  }
+});
+
+
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section) {
+   section.scrollIntoView({ behavior: 'smooth' });
+  }
+ }
+
+
+</script>
+
+</body>
+</html>
