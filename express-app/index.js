@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   res.send(
-    "<h1>Hello World!</h1> <p>This is an Express.js application running in a Docker container.</p>",
+    "<p>This is an Express.js application running in a Docker container.</p>",
   );
 });
 
