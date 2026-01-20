@@ -1,12 +1,12 @@
-name: Build and Push Express Docker Image
+name: Build and Push Backend Docker Image
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'express-app/**'
-      - '.github/workflows/express-app.yaml'
+      - 'example-backend/**'
+      - '.github/workflows/backend.yaml'
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: express-app
+        working-directory: example-backend
 
     steps:
     - name: Checkout repository
@@ -32,6 +32,6 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v4
       with:
-        context: ./express-app
+        context: ./example-backend
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/express-app:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/backend:latest
